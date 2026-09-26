@@ -5,7 +5,7 @@ const endAlignment = Alignment.bottomCenter;
 
 class gr_con extends StatelessWidget{
   @override
-  const gr_con({super.key});
+  gr_con({super.key});
 Widget build(BuildContext context){return
 Container(
       decoration: BoxDecoration(
@@ -22,7 +22,7 @@ Container(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset(,
+          Image.asset(activediceimage,
           const SizedBox(height: 20)
           ),
           TextButton(
@@ -44,6 +44,7 @@ Container(
       );
       }
   void rolldice(){
-    
+    activediceimage = 'assets/images/dice-4.png';
   }
+  var activediceimage = 'assets/images/dice-1.png';
 }
