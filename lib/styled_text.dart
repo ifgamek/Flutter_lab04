@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class StyledText extend StatelessWidget{
+  final String text;
   @override
-  const StyledText(String s, {super.key, required int fontSize, required Color color});
+  const StyledText(this.text, String s, {super.key, required int fontSize, required Color color});
   
   @override
   Widget build(BuildContext context) { return Container(
@@ -11,7 +12,7 @@ class StyledText extend StatelessWidget{
             Colors.white,]
         ),
       ),
-      child: Center(child: StyledText ("Hello world!",
+      child: Center(child: StyledText ("Hello world!"
         color: Colors.white,
         fontSize: 32,)),
   );
