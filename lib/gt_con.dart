@@ -19,9 +19,24 @@ Container(
         ),
       ),
     child: Center(
-      child: Text("hello world!",
-      style: TextStyle(
-        color: Colors.white,
-        fontSize: 32,
-      ))));}
+      child: Column(
+        children: [
+          Image.asset('assets/images/dice-1.png',
+          width: 300,
+          ),
+          TextButton(
+        onPressed: rolldice,
+        child: Text("Roll Dice"),
+
+        
+      ),
+        ],
+      ),
+      ),
+      
+      );
+      }
+  void rolldice(){
+    
+  }
 }
